@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    background: #f1f1f1;
+  }
+  
+  body {
+    background: #f1f1f1;
+  }
+
+thead,
+tfoot {
+    background-color: #333;
+    color: #fff;
+}
+
+.title-projet {
+    margin-bottom: 8%;
+}
+
+.box-title {
+    margin-top:10%;
+    /* margin-bottom: 5%; */
+}
+
+/* Scrollbar */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #333;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Fin Scrollbar */
+  
+  /* DEBUT NAV */
+  
+  nav {
+    z-index: 2000;
+    top: 0;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    background: #f5574c;
+    border-bottom: 1px dotted #f1f1f1f1;
+  }
+  
+  .logo-menu {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    width: 50px;
+    z-index: 200;
+    display: none;
+  }
+  
+  .liste-nav {
+    background: #f5574c;
+    border-bottom: 1px dotted #f1f1f1f1;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    position: fixed;
+    z-index: 100;
+  }
+  
+  .item-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  nav .item-nav a {
+    font-size: 25px;
+    color: #333;
+    text-decoration: none;
+    margin: 0 20px;
+  }
+  
+  .item-nav a::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 0%;
+    height: 2px;
+    background: #333;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .item-nav a:hover::after {
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    nav {
+      z-index: 400;
+    }
+    nav ul li {
+      border-bottom: 1px solid rgba(51, 51, 51, 0.295);
+    }
+  
+    .logo-menu {
+      display: block;
+    }
+  
+    .liste-nav {
+      display: none;
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .item-nav {
+      height: 70px;
+    }
+  
+    .liste-nav.active {
+      display: block;
+    }
+  
+    .item-nav:nth-child(1) {
+      margin-top: 70px;
+    }
+  }
+  
+  /* login nav */
+  
+  #btn-connect {
+    background-color: #333;
+    border: 2px solid #333;
+    margin-top: 10px;
+    position: relative;
+    margin-left: 1700px;
+    z-index: 600;
+  }
+  
+  @media screen and (max-width: 375px) {
+    #btn-connect {
+      z-index: 700;
+      position: absolute;
+      margin-left: 30%;
+    }
+  }
+  
+  /* FIN DE NAV */
+  
+  /* FOOTER */
+  
+  .container-head {
+    margin-top: 15%;
+  }
+  
+  /* FOOTER */
+  
+  footer {
+    padding-top: 50px;
+    bottom: 0!important;
+    /* position: absolute; */
+    width: 100%;
+    background: #f5574c;
+    height: auto;
+    margin-top: 6%;
+    border-bottom: 4px solid #333;
+  }
+  
+  .context-dark,
+  .bg-gray-dark,
+  .bg-primary {
+    color: #333;
+  }
+  
+  .footer-classic a,
+  .footer-classic a:focus,
+  .footer-classic a:active {
+    color: #333;
+  }
+  .nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    text-transform: uppercase;
+    color: #333;
+  }
+  .social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .nav-list li a:before {
+    content: "\f14f";
+    color: #333;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.22s ease;
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  footer .social-media-foot div a {
+    text-decoration: none;
+    background: #333;
+    color: #f1f1f1;
+  }
+  
+  footer .social-media-foot div a:hover {
+    background: #94322b;
+    font-size: 16px;
+  }
+  
+  footer h5 {
+    font-weight: bold;
+  }
+  
+  footer h2 {
+    font-weight: bold;
+  }
+  
+  .Subscribe {
+    background-color: #333 !important;
+    color: #ffffff !important;
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+    margin-left: 43%;
+    margin-top: 15px;
+    margin-bottom: 3%;
+  }
+  
+  #email {
+    width: 30%;
+    text-align: center;
+    margin-left: 32%;
+    margin-top: 10px;
+  }
+  
+  #newsletter {
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 39%;
+    font-size: 18px;
+  }
+  
+  @media screen and (max-width: 375px) {
+    footer {
+      position: relative;
+      display: block;
+      margin-top: 20%;
+    }
+  
+    #email {
+      width: 70%;
+      margin-left: 15%;
+    }
+  
+    #newsletter {
+      margin-left: 5%;
+    }
+  
+    .Subscribe {
+      margin-left: 28%;
+    }
+
+    .box-title {
+      margin-top: 25%;
+    }
+  }
+  
+  /* FIN FOOTER */
+
+#projet-box {
+  margin-top: 7%;
+}
+
+.modal-content {
+  margin-top: 40%;
+}

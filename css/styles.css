@@ -1,0 +1,56 @@
+h1{
+    display: inline-block;
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.money{
+    margin-top: 10%;
+    margin-right: 15%;
+    float: right;
+}
+
+.container{
+    border: 1px solid black;
+    
+}
+
+.p1{
+    width: 70%;
+    display: inline-block
+}
+
+.telephone{
+    display: inline-block;
+   
+}
+
+.mail{
+    display: inline-block;
+}
+
+table td{
+    border: 1px solid black;
+}
+
+table{
+    width: 90%;
+    margin-top: 5%;
+}
+.box1{
+    margin-top: 1%;
+   
+}
+
+.box2{
+    margin-top: 1%;
+    margin-bottom: 5%;
+    
+}
+
+.donnes{
+    margin: 0 auto;
+    width: 50%; 
+}
+
